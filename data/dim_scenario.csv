@@ -1,0 +1,6 @@
+ScenarioID,ScenarioName,CostAdjPct,DemandAdjPct,DefectAdjPct,DowntimeAdjPct
+S00,Baseline,0.0,0.0,0.0,0.0
+S01,Raw Material Spike,0.12,-0.03,0.01,0.01
+S02,Demand Surge,0.02,0.14,0.0,0.0
+S03,Quality Crisis,0.04,-0.06,0.035,0.02
+S04,Optimized Factory,-0.05,0.06,-0.015,-0.01

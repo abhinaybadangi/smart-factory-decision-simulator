@@ -1,0 +1,5 @@
+ProductID,ProductFamily,SKU,BaseSellingPrice,BaseRawMaterialCost,BaseLaborCost,BaseOverheadCost
+PR01,Engine Components,ENG-100,8700,3800,950,700
+PR02,Brake Systems,BRK-200,6300,2600,850,560
+PR03,Transmission Parts,TRN-300,9800,4300,1150,780
+PR04,Suspension Modules,SUS-400,7200,3000,900,620

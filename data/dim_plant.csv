@@ -1,0 +1,4 @@
+PlantID,PlantName,Region,Country,CapacityUnitsPerDay
+P01,Chennai Plant,South,India,1450
+P02,Pune Plant,West,India,1250
+P03,Oragadam Plant,South,India,1350

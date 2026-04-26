@@ -1,77 +1,114 @@
-# Smart Factory Decision Simulator
+# 🏭 Smart Factory Decision Simulator
 
-Interactive Power BI dashboard that simulates how cost, demand, and defect rates impact production profitability in real time.
+<p align="center">
+  <img src="images/gif.gif" alt="Smart Factory Decision Simulator Demo" width="100%">
+</p>
 
-## Overview
 
-Smart Factory Decision Simulator is a scenario-based Power BI project designed to help decision-makers understand how operational changes affect factory performance. Users can adjust key business drivers using interactive controls and instantly see the impact on KPIs, production flow, cost structure, and profit.
 
-This project focuses on turning a dashboard into a decision tool by combining:
+> **Interactive Power BI dashboard that simulates how cost, demand, and defect rates impact production profitability in real time.**
 
-- what-if parameters
-- advanced DAX measures
-- dynamic KPI recalculation
-- Sankey-based production-to-profit flow analysis
-- automated insight generation
-- modern dark-themed UI
+---
 
-## Business Problem
+## 🚀 Overview
 
-Manufacturing teams often struggle to understand how small operational changes influence profitability. Rising costs, fluctuating demand, and defect rates can quickly affect output and margins.
+The **Smart Factory Decision Simulator** is an advanced Power BI project designed to transform a traditional dashboard into a **decision-making tool**.
 
-This dashboard solves that problem by allowing users to simulate those changes in real time and visually trace their impact from production to profit.
+Instead of static reporting, this solution enables users to **simulate real-world operational scenarios** by adjusting key business drivers such as cost, demand, and defect rates — and instantly observe the impact on production, revenue, and profit.
 
-## Objectives
+---
 
-- Simulate operational scenarios using parameter-driven inputs
-- Show how cost, demand, and defects influence performance
-- Visualize the production-to-profit journey clearly
-- Provide a premium, interactive Power BI experience
-- Demonstrate advanced analytical storytelling for portfolio and recruiter review
+## 🎯 Business Problem
 
-## Features
+Manufacturing environments constantly deal with:
 
-- **Scenario Controls**
-  - Cost Change %
-  - Demand Change %
-  - Defect Change %
+- Rising operational costs  
+- Fluctuating demand  
+- Quality issues (defects & losses)  
 
-- **Dynamic KPI Cards**
-  - Sales
-  - Quantity
-  - Cost
-  - Discount / Defect-related metric
+Understanding how these factors affect profitability is often complex and delayed.
 
-- **Interactive Sankey Flow**
-  - Raw Material -> Production -> Good Units / Defective Units -> Revenue / Loss -> Profit
+👉 This dashboard solves that by providing a **real-time simulation layer** that visually connects operations to outcomes.
 
-- **Cost Breakdown Panel**
-  - Simulated cost composition across major cost types
+---
 
-- **Profit Trend Panel**
-  - Quick trend view for scenario comparison
+## ⚙️ Key Features
 
-- **Insight Engine**
-  - Dynamic narrative summarizing the current simulated business state
+### 🎛️ Scenario Simulation Controls
+- Cost Change %
+- Demand Change %
+- Defect Change %
 
-## Data Model
+👉 Users can dynamically adjust inputs and instantly see results
 
-This project uses a star-schema-inspired model with:
+---
 
-### Fact Table
-- `fact_factory_daily`
+### 📊 Dynamic KPI Cards
+- Sales  
+- Quantity  
+- Cost  
+- Discount / Defect Indicator  
 
-### Dimension Tables
-- `dim_date`
-- `dim_plant`
-- `dim_product`
-- `dim_scenario`
-- `Cost Type` (disconnected helper table)
-- `Sankey` (helper table for flow visualization)
+👉 All KPIs recalculate in real time
 
-## Key Measures
+---
 
-Examples of core measures used:
+### 🔁 Sankey Flow Visualization (Core Highlight)
+- Raw Material → Production → Good Units / Defective Units  
+- → Revenue / Loss → Profit  
+
+👉 Converts complex operations into a **clear visual story**
+
+---
+
+### 📉 Cost Breakdown Panel
+- Raw Material  
+- Labor  
+- Overhead  
+- Energy  
+- Maintenance  
+
+👉 Understand cost composition instantly
+
+---
+
+### 📈 Profit Trend
+- Quick trend analysis for scenario comparison
+
+---
+
+### 💡 Insight Engine
+- Automatically generates a narrative like:
+
+> *"Profit increased by 29.3% with stable defect levels and controlled costs."*
+
+👉 Turns data into **business language**
+
+---
+
+## 🧠 Technical Implementation
+
+### 🔹 Data Model
+Star-schema inspired model:
+
+- **Fact Table**
+  - `fact_factory_daily`
+
+- **Dimensions**
+  - `dim_date`
+  - `dim_plant`
+  - `dim_product`
+  - `dim_scenario`
+
+- **Helper Tables**
+  - `Cost Type`
+  - `Sankey`
+
+---
+
+### 🔹 Advanced DAX Logic
+
+Key measures include:
 
 - `Adjusted Revenue`
 - `Adjusted Units Sold`
@@ -79,90 +116,82 @@ Examples of core measures used:
 - `Adjusted Defective Units`
 - `Adjusted Profit`
 - `Adjusted Defect Rate %`
-- `Insight Text`
 - `Flow Value`
 - `Adjusted Cost Value`
+- `Insight Text`
 
-## Tools & Technologies
+👉 All visuals are driven by **parameter-controlled DAX calculations**
 
-- **Power BI**
-- **DAX**
-- **CSV / Excel data modeling**
-- **What-if Parameters**
-- **Sankey Visual**
-- **Custom UI design in Power BI**
+---
 
-## Dashboard Preview
+### 🔹 Simulation Flow
 
-Add screenshots here after exporting from Power BI.
+1. User adjusts sliders  
+2. Parameters update DAX measures  
+3. KPIs recalculate instantly  
+4. Sankey updates production flow  
+5. Insight text summarizes impact  
 
-### Recommended Screenshots
-1. Full dashboard view
-2. Sankey simulation focus
-3. Parameter controls + insight panel
+👉 Creates a **live simulation experience**
 
-## How It Works
+---
 
-1. Users adjust scenario sliders
-2. Parameters trigger adjusted DAX measures
-3. KPI cards and supporting visuals recalculate instantly
-4. Sankey flow updates to reflect operational movement
-5. Insight panel generates a readable business summary
+## 🖼️ Dashboard Preview
 
-## Why This Project Stands Out
+### Full Dashboard
+![Dashboard Overview](images/dashboard-overview.PNG)
 
-Most Power BI portfolio projects are descriptive dashboards.
+### Sankey Simulation Flow
+![Sankey Focus](images/sankey-focus.PNG)
 
-This project is different because it acts as a **decision simulator** rather than a static report. It demonstrates:
+### Controls & Insight Engine
+![Controls and Insight](images/controls-insight.PNG)
 
-- analytical thinking
-- scenario modeling
-- business storytelling
-- UI/UX design discipline
-- recruiter-friendly project positioning
+---
 
-## Repository Structure
+## 🛠️ Tools & Technologies
+
+- Power BI  
+- DAX (Advanced)  
+- What-if Parameters  
+- Data Modeling (Star Schema)  
+- Custom UI/UX Design  
+- Sankey Visual  
+
+---
+
+## 💼 Skills Demonstrated
+
+- Scenario-based analytics  
+- Advanced DAX modeling  
+- Interactive dashboard design  
+- Data storytelling  
+- Business problem solving  
+- UI/UX thinking in Power BI  
+
+---
+
+## ⭐ Why This Project Stands Out
+
+Most dashboards describe what happened.
+
+👉 This project **simulates what could happen**.
+
+It demonstrates:
+
+- Decision-focused design  
+- Real-time business modeling  
+- Visual storytelling with impact  
+- Recruiter-ready presentation  
+
+---
+
+## 📂 Repository Structure
 
 ```text
 smart-factory-decision-simulator/
 │
 ├── data/
-│   ├── fact_factory_daily.csv
-│   ├── dim_date.csv
-│   ├── dim_plant.csv
-│   ├── dim_product.csv
-│   ├── dim_scenario.csv
-│   └── data_dictionary.csv
-│
 ├── images/
-│   ├── dashboard-overview.png
-│   ├── sankey-focus.png
-│   └── controls-insight.png
-│
 ├── pbix/
-│   └── Smart_Factory_Decision_Simulator.pbix
-│
 └── README.md
-```
-
-## Resume-Friendly Summary
-
-Built an interactive Power BI decision simulator using what-if parameters and advanced DAX to model the impact of cost, demand, and defects on manufacturing profitability.
-
-## Portfolio Summary
-
-A scenario-driven Power BI project designed to simulate operational outcomes and help stakeholders understand how production, loss, revenue, and profit respond to changing business conditions.
-
-## Future Enhancements
-
-- Tooltip pages for deeper drill insights
-- Scenario bookmarks for guided storytelling
-- Plant-level benchmarking
-- Forecast-driven simulation layer
-- Export-ready executive summary page
-
-## Author
-
-**Abhinay Badangi**  
-Data Analyst | Power BI | SQL | Python  
-Portfolio: https://abhinaybadangi.github.io/portfolio/

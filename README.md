@@ -195,3 +195,11 @@ smart-factory-decision-simulator/
 ├── images/
 ├── pbix/
 └── README.md
+
+``` 
+👤 Author
+
+Abhinay Badangi
+Data Analyst | Power BI | SQL | Python
+
+🌐 Portfolio: https://abhinaybadangi.github.io/portfolio/

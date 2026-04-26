@@ -93,3 +93,137 @@ Automatically generates business insights such as:
 ---
 
 ## 🧩 System Architecture
+User Input (Sliders)
+↓
+What-if Parameters
+↓
+Adjusted DAX Measures
+↓
+KPI Cards | Sankey Flow | Cost Breakdown
+↓
+Insight Engine (Narrative Output)
+
+
+---
+
+## 🧠 Technical Implementation
+
+### Data Model
+- Fact Table: `fact_factory_daily`  
+- Dimensions: `dim_date`, `dim_plant`, `dim_product`, `dim_scenario`  
+- Helper Tables: `Cost Type`, `Sankey`  
+
+---
+
+### Key Measures
+- Adjusted Revenue  
+- Adjusted Units Sold  
+- Adjusted Total Cost  
+- Adjusted Defective Units  
+- Adjusted Profit  
+- Adjusted Defect Rate %  
+- Flow Value  
+- Adjusted Cost Value  
+- Insight Text  
+
+---
+
+### Simulation Flow
+1. User adjusts sliders  
+2. Parameters trigger DAX recalculations  
+3. KPIs update instantly  
+4. Sankey reflects production changes  
+5. Insight engine summarizes impact  
+
+---
+
+## 🖼️ Dashboard Preview
+
+### Full Dashboard
+![Dashboard Overview](images/dashboard-overview.PNG)
+
+### Sankey Simulation
+![Sankey](images/sankey-focus.PNG)
+
+### Controls & Insight Engine
+![Controls](images/controls-insight.PNG)
+
+---
+
+## 🛠️ Tools & Technologies
+
+- Power BI  
+- DAX (Advanced)  
+- What-if Parameters  
+- Data Modeling (Star Schema)  
+- Sankey Visual  
+- UI/UX Design in Power BI  
+
+---
+
+## 💼 Skills Demonstrated
+
+- Scenario-based analytics  
+- Advanced DAX modeling  
+- Interactive dashboard design  
+- Data storytelling  
+- Business problem solving  
+- UI/UX thinking  
+
+---
+
+## ⭐ Why This Project Matters
+
+Most dashboards show what happened.
+
+👉 This project is different — it allows users to **simulate what will happen**.
+
+It demonstrates:
+- Decision-focused analytics  
+- Scenario modeling  
+- Business storytelling  
+- Recruiter-ready project thinking  
+
+---
+
+## 📂 Repository Structure
+smart-factory-decision-simulator/
+│
+├── data/
+├── images/
+├── pbix/
+└── README.md
+
+
+---
+
+## 📌 Resume Highlight
+
+- Built an interactive Power BI decision simulator using what-if parameters and advanced DAX  
+- Modeled cost, demand, and defect scenarios to analyze profitability impact  
+- Designed Sankey-based flow visualization for production-to-profit storytelling  
+
+---
+
+## 🔮 Future Enhancements
+
+- Tooltip drill-down pages  
+- Scenario bookmarking  
+- Forecast-driven simulation  
+- Multi-plant comparison  
+- Executive summary export  
+
+---
+
+## 👤 Author
+
+**Abhinay Badangi**  
+Data Analyst | Power BI | SQL | Python  
+
+🌐 Portfolio: https://abhinaybadangi.github.io/portfolio/
+
+---
+
+## 🚀 Final Thought
+
+> This is not just a dashboard — it’s a **decision simulation system built in Power BI**.
